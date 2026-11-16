@@ -1,0 +1,5 @@
+numpy>=2.0
+numba>=0.60
+pandas>=2.2
+zstandard>=0.22
+matplotlib>=3.9

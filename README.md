@@ -9,6 +9,7 @@ Muhammad Awwab Aamir (22i-0971) · Rayyan Khan (22i-1002)
 | Path | Contents |
 |---|---|
 | `reproduction/` | Reproduction of the base article (Mix-Piece, VLDB Journal 2024) and the batching-window / deadband gap experiment — code, raw results, figures. See `reproduction/README.md`. |
+| `framework/` | Proposed framework (components A and B), trace-driven edge→cloud emulator, baselines, ablation, results and figures. See `framework/README.md`. |
 | `reports/` | Submitted reports (base-article reproduction and research-gap report). |
 
 ## Base article
