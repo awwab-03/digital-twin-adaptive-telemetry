@@ -5,7 +5,7 @@ Official code: https://github.com/xkitsios/Sim-Piece (Apache-2.0)
 
 ## Reproduce
 ```bash
-git clone https://github.com/xkitsios/Sim-Piece.git
+git clone https://github.com/xkitsios/Sim-Piece.git && git -C Sim-Piece checkout f4e875c   # commit used in our study
 mkdir -p build data out/full out/window && cp Sim-Piece/src/test/resources/*.gz data/
 SRC=Sim-Piece/src
 javac -d build $(find shim $SRC/main $SRC/test/java/io/github/xkitsios/util -name "*.java") runner/Repro.java

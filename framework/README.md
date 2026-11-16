@@ -18,8 +18,7 @@ java -Xmx5g -cp build WinRun data mp Pressure,BTCUSD,ETHUSD,SPX,STOXX50E 0.1,0.2
 # 3. all schemes, ablation, sensitivity (writes results_all.csv)
 pip install -r requirements.txt
 python3 run_all.py data mp results/results_all.csv
-python3 analyze.py   # summary tables + bootstrap CIs (run inside results/ or adjust paths)
-python3 figs.py      # figures used in the article
+cd results && mkdir -p fig && python3 ../analyze.py && python3 ../figs.py   # tables, bootstrap CIs, article figures
 ```
 All algorithms are deterministic, so step 3 reproduces `results/results_all.csv` exactly (edge timing columns vary with hardware).
 `../reproduction/shim` replaces zstd-jni (Maven Central was unreachable); `run_all.py` applies real zstd level 3 to the exact payloads.
