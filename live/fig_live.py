@@ -14,6 +14,6 @@ for s in ['FR','DB','A','DB+B','A+B','MP']:
     lat = np.sort(np.concatenate(lat)); y = np.arange(1, len(lat) + 1) / len(lat)
     ax.plot(np.maximum(lat, 0.1), y, color=C[s], label=LBL[s], lw=1.3, ls='--' if s in ('DB','A') else '-')
 ax.set_xscale('log'); ax.set_xlabel('Sample-to-commit latency (ms)'); ax.set_ylabel('CDF of updates')
-ax.axvline(640, color='k', lw=0.6, ls=':'); ax.text(660, 0.05, '$D$=0.64 s', fontsize=6.5)
+ax.axvline(640, color='k', lw=0.6, ls=':'); ax.text(600, 0.05, '$D$=0.64 s ', fontsize=6.5, ha='right')
 ax.legend(frameon=False, fontsize=6.2, loc='upper left'); ax.grid(alpha=0.3, lw=0.4)
 plt.tight_layout(); plt.savefig('fig_live_latency.pdf'); plt.savefig('fig_live_latency.png', dpi=200); print('ok')
