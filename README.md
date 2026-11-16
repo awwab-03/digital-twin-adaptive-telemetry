@@ -10,6 +10,7 @@ Muhammad Awwab Aamir (22i-0971) · Rayyan Khan (22i-1002)
 |---|---|
 | `reproduction/` | Reproduction of the base article (Mix-Piece, VLDB Journal 2024) and the batching-window / deadband gap experiment — code, raw results, figures. See `reproduction/README.md`. |
 | `framework/` | Proposed framework (components A and B), trace-driven edge→cloud emulator, baselines, ablation, results and figures. See `framework/README.md`. |
+| `live/` | Live testbed (50 MQTT devices → Mosquitto → ingestion → SQLite twin) used to validate the emulator. See `live/README.md`. |
 | `reports/` | Submitted reports (base-article reproduction and research-gap report). |
 
 ## Base article
